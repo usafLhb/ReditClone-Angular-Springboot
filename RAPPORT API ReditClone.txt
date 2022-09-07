@@ -1,0 +1,63 @@
+POST==>http://localhost:9090/api/auth/signup
+{ 
+    "email":"bizou@gmail.com",
+    "userName":"bizou",
+    "password":"pswrd12311"
+}
+GET==>http://localhost:9090/api/auth/accountVerification/56a09261-5112-478c-b8de-b861dd523777
+POST==> http://localhost:9090/api/auth/login
+{
+    "password":"pswrd12311",
+    "userName":"bizou"
+}
+POST==>http://localhost:9090/api/auth/logout
+POST ==> ?
+{
+    "refreshToken":"75060b5d-b58d-4ed8-bb7b-2d9b4f72a47f",
+    "username":"bizou"
+}
+POST ==>http://localhost:9090/api/votes/
+{
+    "voteType":"DOWNVOTE" ,
+    "postId":2
+    
+}
+POST==>http://localhost:9090/api/comment/
+{
+        "postId": 1,
+        "text": "commentaire 1" 
+    
+}
+POST==>http://localhost:9090/api/posts/
+{
+        "userName": "bizou",
+        "description":"OST est l'acronyme d'organisation scientifique du travail. Il s'agit d'une méthode de gestion et d'organisation du travail. Elle a été créée au cours de la seconde révolution industrielle par Frederick Winslow Taylor.",
+        "subredditName":"kachimiru",
+        "url":"https://www.journaldunet.fr/business/dictionnaire-economique-et-financier/1198997-ost-organisation-scientifique-du-travail-definition/#:~:text=D%C3%A9finition%20du%20mot%20OST%20(organisation,industrielle%20par%20Frederick%20Winslow%20Taylor.",
+        "postName":"Définition du mot OST  "
+}
+POST==>http://localhost:9090/api/subreddit/
+{
+    "name":"kachimiru",
+    "description":"douz",
+    "numberOfPosts":"25"
+}
+GET==>http://localhost:9090/api/posts/by-subreddit/11
+GET==>http://localhost:9090/api/posts/by-user/bizou
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

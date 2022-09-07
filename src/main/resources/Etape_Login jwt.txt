@@ -1,0 +1,12 @@
+Creation du package SECURITY ==> qui genere un token d'identification
+Creation d'un UserDetailsServiceImpl implements UserDetailsService dans le package service ==>Qui cherche  l'user  si  il existe 
+Dans le  package config =>  inserer  des fonctions (public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) //  public AuthenticationManager authenticationManagerBean())
+Dans le package DTO creation  de  deux classe requeste  qui contient le username et le Mdp  et class response qui contient User & le token
+Ajouter un fichier dans le resources  springblog.jks
+Enfin la fonction   Login dans  un fichier service
+Appeler  cette fonction  dans le controller
+
+///////////////////////////
+
+TOKEN POUR VALIDER LES REQUETTES
+HOW HE  KNOWS THAT IS  DELETED ?
